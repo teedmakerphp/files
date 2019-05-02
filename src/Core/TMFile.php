@@ -21,9 +21,7 @@ class TMFile
      * @return void
      */
     public function save(string $content=null) {
-        if ($content!==null) {
-            $this->content = $content;
-        }
+        $this->content = $content;
         $this->createDirectory($this->path);
         return file_put_contents($this->path, $this->content);
     }
