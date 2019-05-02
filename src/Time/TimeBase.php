@@ -1,6 +1,6 @@
 <?php
 
-namespace TMFiles\Time;
+namespace TMPHPFiles\Time;
 
 class TimeBase
 {
