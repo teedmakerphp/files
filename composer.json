@@ -8,8 +8,5 @@
             "name": "Tadeu Barbosa",
             "email": "tadeufbarbosa@gmail.com"
         }
-    ],
-    "require": {
-        "teedmaker/tmfiles-cache": "dev-master"
-    }
+    ]
 }
