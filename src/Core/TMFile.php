@@ -35,9 +35,8 @@ class TMFile
      * @return void
      */
     public function increments(string $content) {
-        $this->createDirectory($this->path);
         $content = $this->content . $content;
-        return file_put_contents($this->path, $content);
+        return $this->save($content);
     }
 
     /**
