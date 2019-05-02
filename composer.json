@@ -1,12 +1,13 @@
 {
-    "name": "teedmaker/tmfiles-core",
-    "description": "A library to upload files",
+    "name": "teedmaker/tmphp-files",
+    "description": "A simple library to manipulate files",
     "type": "library",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Tadeu Barbosa",
-            "email": "tadeufbarbosa@gmail.com"
+            "name"     : "Tadeu Barbosa",
+            "email"    : "tadeufbarbosa@gmail.com",
+            "homepage" : "https://www.linkedin.com/in/tadeubarbosa/"
         }
     ]
 }
