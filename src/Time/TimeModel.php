@@ -4,10 +4,10 @@ namespace TMFiles\Time;
 
 abstract class TimeModel
 {
-    public function __construct($object) {}
+    abstract public function __construct($object);
 
-    public function isGreaterThan($object) {}
+    abstract public function isGreaterThan($object);
 
-    public function isLessThan($object) {}
+    abstract public function isLessThan($object);
 
 }
