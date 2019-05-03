@@ -9,5 +9,13 @@
             "email"    : "tadeufbarbosa@gmail.com",
             "homepage" : "https://www.linkedin.com/in/tadeubarbosa/"
         }
-    ]
+    ],
+    "autoload": {
+        "classmap": [
+            "src/Core/"
+        ],
+        "psr-4": {
+            "TMPHP\\Files\\": "src/"
+        }
+    }
 }
