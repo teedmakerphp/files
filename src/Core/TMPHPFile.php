@@ -57,7 +57,10 @@ class TMPHPFile
      * @return void
      */
     public function createDirectory(string $path, bool $recursive=true) {
-        return mkdir($path, 0777, $recursive);
+        if(!is_dir($path)) {
+            return mkdir($path, 0777, $recursive);
+        }
+        return null;
     }
 
     /**
