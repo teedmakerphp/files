@@ -5,7 +5,7 @@ use TMPHP\Files\Time\{
     Modified as Modified
 };
 
-class TMFile
+class TMPHPFile
 {
     protected $path    = null;
     protected $content = null;

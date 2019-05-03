@@ -11,16 +11,16 @@ class TimeBase
     }
 
     /**
-     * Getting the TMFile object from the passed
+     * Getting the TMPHPFile object from the passed
      *
      * @param [type] $object
      * @return void
      */
     protected function generateAObject($object) {
         if (is_string($object)) {
-            $object = new TMFile($object);
+            $object = new TMPHPFile($object);
         }
-        if (!is_a($object, 'TMFile')) {
+        if (!is_a($object, 'TMPHPFile')) {
             throw new Exception("The object passed is a invalid type.");
         }
         return $object;

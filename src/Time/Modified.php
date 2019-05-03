@@ -3,7 +3,7 @@
 namespace TMPHP\Files\Time;
 
 use TMPHP\Files\{
-    TMFile         as TMFile,
+    TMPHPFile         as TMPHPFile,
     Time\TimeBase  as TimeBase,
     Time\TimeModel as TimeModel
 };

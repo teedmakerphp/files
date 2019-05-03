@@ -4,7 +4,7 @@ This is a simple library to manipulate some files.
 For now we can do things like...
 
 ````php
-$file = new TMFile('path/to/file.txt');
+$file = new TMPHPFile('path/to/file.txt');
 $file->increments("\n Hello new line!");
 ````
 
@@ -13,7 +13,7 @@ $file->increments("\n Hello new line!");
 Or you can do too, a simple function to verify if a file was be modified:
 
 ````php
-$file = new TMFile('path/to/file.txt');
+$file = new TMPHPFile('path/to/file.txt');
 $modifiedAt = $file->getMTime();
 if($modifiedAt > $timeForDatabase) {
     // then do it
@@ -23,8 +23,8 @@ if($modifiedAt > $timeForDatabase) {
 Or yet, you can compare two files modified.
 
 ````php
-$original = new TMFile('path/to/original.txt');
-$cached   = new TMFile('path/to/cached.txt');
+$original = new TMPHPFile('path/to/original.txt');
+$cached   = new TMPHPFile('path/to/cached.txt');
 if($original->modified()->isGreaterThan($cached)) {
     // cache the original again, cause he is old!
 }
