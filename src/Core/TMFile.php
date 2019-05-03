@@ -1,6 +1,6 @@
 <?php
 
-use TMPHPFiles\Time\{
+use TMPHP\Files\Time\{
     Created  as Created,
     Modified as Modified
 };
@@ -63,7 +63,7 @@ class TMFile
     /**
      * Returns a new instance of Created class
      *
-     * @return TMPHPFiles\Time\Created
+     * @return TMPHP\Files\Time\Created
      */
     public function created() {
         return new Created($this->path);
@@ -72,7 +72,7 @@ class TMFile
     /**
      * Returns a new instance of Modified class
      *
-     * @return TMPHPFiles\Time\Modified
+     * @return TMPHP\Files\Time\Modified
      */
     public function modified() {
         return new Modified($this->path);

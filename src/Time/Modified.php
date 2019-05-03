@@ -1,8 +1,8 @@
 <?php
 
-namespace TMPHPFiles\Time;
+namespace TMPHP\Files\Time;
 
-use TMPHPFiles\{
+use TMPHP\Files\{
     TMFile         as TMFile,
     Time\TimeBase  as TimeBase,
     Time\TimeModel as TimeModel

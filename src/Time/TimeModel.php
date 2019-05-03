@@ -1,6 +1,6 @@
 <?php
 
-namespace TMPHPFiles\Time;
+namespace TMPHP\Files\Time;
 
 abstract class TimeModel
 {
