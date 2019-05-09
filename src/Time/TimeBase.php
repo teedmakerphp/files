@@ -3,7 +3,6 @@
 namespace TMPHP\Files\Time;
 
 use TMPHPFile;
-use Exception;
 
 class TimeBase
 {
