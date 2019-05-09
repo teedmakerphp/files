@@ -12,8 +12,8 @@ class Modified extends TimeBase implements TimeModel
     protected $path = null;
     protected $time = null;
 
-    public function __construct($object) {
-        parent::__construct($object);
+    public function __construct(string $value) {
+        parent::__construct($value);
     }
 
     public function isGreaterThan($object) {
