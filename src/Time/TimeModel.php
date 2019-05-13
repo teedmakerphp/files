@@ -2,12 +2,12 @@
 
 namespace TMPHP\Files\Time;
 
-abstract class TimeModel
+interface TimeModel
 {
-    abstract public function __construct($object);
+    public function __construct($object);
 
-    abstract public function isGreaterThan($object);
+    public function isGreaterThan($object);
 
-    abstract public function isLessThan($object);
+    public function isLessThan($object);
 
 }
