@@ -51,6 +51,14 @@ class TMPHPFile
         }
     }
 
+    public function getContent() {
+        try {
+            return file_get_contents($this->path);
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
     /**
      * Deletes this file
      *
