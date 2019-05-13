@@ -9,9 +9,6 @@ use TMPHP\Files\{
 
 class Modified extends TimeBase implements TimeModel
 {
-    protected $path = null;
-    protected $time = null;
-
     public function __construct($object) {
         parent::__construct($object);
     }
