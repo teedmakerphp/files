@@ -18,11 +18,11 @@ class Created extends TimeBase implements TimeModel
 
     public function isGreaterThan($object) {
         $object = $this->generateAObject($object);
-        return $this->instance->getMTime() > $object->getMTime();
+        return $this->instance->getCTime() > $object->getCTime();
     }
 
     public function isLessThan($object) {
         $object = $this->generateAObject($object);
-        return $this->instance->getMTime() < $object->getMTime();
+        return $this->instance->getCTime() < $object->getCTime();
     }
 }
