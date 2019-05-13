@@ -3,11 +3,9 @@
 namespace TMPHP\Files\Time;
 
 use TMPHP\Files\{
-    TMPHPFile         as TMPHPFile,
     Time\TimeBase  as TimeBase,
     Time\TimeModel as TimeModel
 };
-use Exception;
 
 class Created extends TimeBase implements TimeModel
 {
