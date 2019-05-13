@@ -5,6 +5,8 @@ use TMPHP\Files\Time\{
     Modified as Modified
 };
 
+use Throwable;
+
 class TMPHPFile
 {
     protected $path    = null;
@@ -46,7 +48,7 @@ class TMPHPFile
     public function getLines() {
         try {
             return fopen($this->path, 'r');
-        } catch (\Throwable $th) {
+        } catch (Throwable $th) {
             throw $th;
         }
     }
@@ -54,7 +56,7 @@ class TMPHPFile
     public function getContent() {
         try {
             return file_get_contents($this->path);
-        } catch (\Throwable $th) {
+        } catch (Throwable $th) {
             throw $th;
         }
     }
