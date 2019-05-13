@@ -33,8 +33,9 @@ class TMPHPFile
      * @return void
      */
     public function increments(string $content) {
-        $content = $this->content . $content;
-        return $this->save($content);
+        $this->content = $content;
+        $this->createDirectory($this->path);
+        return file_put_contents($this->path, $content, FILE_APPEND);
     }
 
     /**
