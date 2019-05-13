@@ -25,6 +25,6 @@ class Modified extends TimeBase implements TimeModel
 
     public function isLessThan($object) {
         $object = $this->generateAObject($object);
-        return $this->instance->getCTime() < $object->getCTime();
+        return $this->instance->getMTime() < $object->getMTime();
     }
 }
