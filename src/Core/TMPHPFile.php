@@ -39,6 +39,19 @@ class TMPHPFile
     }
 
     /**
+     * Return all lines
+     *
+     * @return void
+     */
+    public function getLines() {
+        try {
+            return fopen($this->path, 'r');
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
+    /**
      * Deletes this file
      *
      * @return void
