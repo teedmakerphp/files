@@ -1,21 +1,26 @@
 {
-    "name": "teedmaker/tmphp-files",
-    "description": "A simple library to manipulate files",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name"     : "Tadeu Barbosa",
-            "email"    : "tadeufbarbosa@gmail.com",
-            "homepage" : "https://www.linkedin.com/in/tadeubarbosa/"
-        }
+  "name": "teedmakerphp/files",
+  "description": "A simple library to manipulate files",
+    "keywords": [
+        "php",
+        "library",
+        "files"
     ],
-    "autoload": {
-        "classmap": [
-            "src/Core/"
-        ],
-        "psr-4": {
-            "TMPHP\\Files\\": "src/"
-        }
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tadeu Barbosa",
+      "email": "tadeufbarbosa@gmail.com",
+      "homepage": "https://github.com/tadeubarbosa/"
     }
+  ],
+  "autoload": {
+    "classmap": [
+      "src/Core/"
+    ],
+    "psr-4": {
+      "TMPHP\\Files\\": "src/"
+    }
+  }
 }
