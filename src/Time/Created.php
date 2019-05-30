@@ -7,19 +7,21 @@ use TMPHP\Files\{
     Time\TimeModel as TimeModel
 };
 
+use TMPHPFile;
+
 class Created extends TimeBase implements TimeModel
 {
-    public function __construct($object) {
-        parent::__construct($object);
+    public function __construct($value) {
+        parent::__construct($value);
     }
 
-    public function isGreaterThan($object) {
-        $object = $this->generateAObject($object);
-        return $this->instance->getCTime() > $object->getCTime();
+    public function isGreaterThan($value) {
+        $object = is_string($value) ? new TMPHPFile($value) : $value;
+        return $this->instance->getCTime() > $object->modified()->instance->getCTime();
     }
 
-    public function isLessThan($object) {
-        $object = $this->generateAObject($object);
-        return $this->instance->getCTime() < $object->getCTime();
+    public function isLessThan($value) {
+        $object = is_string($value) ? new TMPHPFile($value) : $value;
+        return $this->instance->getCTime() < $object->modified()->instance->getCTime();
     }
 }
